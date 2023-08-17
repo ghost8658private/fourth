@@ -20,7 +20,7 @@ jobs:
 
           # Fetch and checkout the mirror branch
           git fetch origin power
-          git checkout power
+          # git checkout power
 
           # Pull changes from the source repository
           git pull https://github.com/ghost8658private/ttesting.git power
