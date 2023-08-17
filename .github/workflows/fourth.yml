@@ -1,0 +1,26 @@
+name: Mirror Repository
+
+on:
+  push:
+    branches:
+      - main  
+
+jobs:
+  mirror:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Source Repository
+        uses: actions/checkout@v2
+        with:
+          ref: ${{ github.ref }}
+          repository: https://github.com/ghost8658private/ttesting.git  # Change this to the source repository
+
+      - name: Mirror to Target Repository
+        run: |
+          git config --global user.name "Ghost8658"
+          git config --global user.email "ghost8658@gmail.com"
+          git clone https://github.com/ghost8658private/trtos.git mirror
+          cd mirror
+          git checkout -b ${{ github.sha }}
+          git push origin ${{ github.sha }}
