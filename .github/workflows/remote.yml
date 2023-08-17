@@ -6,7 +6,7 @@ on:
 
 jobs:
     mirror_branch:
-        uses: devopsworkflows/.github/workflows/copy.yml
+        uses: ghost8658private/devopsworkflows/.github/workflows/copy.yml@newpower
         with:
             source-repo: ghost8658private/ttesting
             source-branch: main
