@@ -1,0 +1,15 @@
+name: Mirror-Remote
+
+on:
+    push:
+    workflow_dispatch:
+
+jobs:
+    mirror_branch:
+        uses: devopsworkflows/.github/workflows/copy.yml
+        with:
+            source-repo: ghost8658private/ttesting
+            source-branch: main
+            destination-branch: main
+        secrets:
+            ACCESS_TOKEN: ${{ secrets.PAT_TOKEN }}
