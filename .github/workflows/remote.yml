@@ -11,6 +11,6 @@ jobs:
         with:
             upstream-repo: https://github.com/ghost8658private/ttesting.git
             main-repo: https://github.com/ghost8658private/tclone.git
-            branches: main:main
+            #branches: main:main
         secrets:
             ACCESS_TOKEN: ${{ secrets.PAT_TOKEN }}
