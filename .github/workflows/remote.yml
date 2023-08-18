@@ -1,9 +1,9 @@
 name: Tclone Mirror-Remote
 
 on:
+    push:
     workflow_dispatch:
 
-#
 
 jobs:
     mirror_branch:
