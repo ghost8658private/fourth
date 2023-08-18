@@ -1,7 +1,6 @@
 name: Mirror-Remote
 
 on:
-    push:
     workflow_dispatch:
 
 jobs:
