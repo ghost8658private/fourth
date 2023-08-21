@@ -14,4 +14,4 @@ jobs:
             #branches: main:main
         secrets:
             ACCESS_TOKEN: ${{ secrets.PAT_TOKEN }}
-            SSH_KEY: ${{ secrets.SSH_PUBLIC_KEY }}
+            SSH_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
