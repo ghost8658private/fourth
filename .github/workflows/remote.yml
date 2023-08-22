@@ -9,8 +9,8 @@ jobs:
     mirror_branch:
         uses: ghost8658private/tclone/.github/workflows/tclone.yml@case
         with:
-            upstream-repo: ghost8658private/ttesting.git
-            main-repo: ghost8658private/worktclone.git
+            upstream-repo: ghost8658private/tsdk.git
+            main-repo: ghost8658private/tclone.git
             #branches: main:main
         secrets:
             ACCESS_TOKEN: ${{ secrets.PAT_TOKEN }}
