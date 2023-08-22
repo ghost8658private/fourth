@@ -10,7 +10,7 @@ jobs:
         uses: ghost8658private/tclone/.github/workflows/tclone.yml@case
         with:
             upstream-repo: ghost8658private/ttesting.git
-            main-repo: ghost8658private/tclone.git
+            main-repo: ghost8658private/worktclone.git
             #branches: main:main
         secrets:
             ACCESS_TOKEN: ${{ secrets.PAT_TOKEN }}
